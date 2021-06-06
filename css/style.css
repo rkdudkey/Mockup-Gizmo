@@ -60,6 +60,7 @@
   display: flex;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 .column .line-1 {
