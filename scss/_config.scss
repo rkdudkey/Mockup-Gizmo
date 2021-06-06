@@ -1,0 +1,20 @@
+$color: #f5f1f14d;
+$text-color : #fff;
+$font-text : 'trendaregular', sans-serif;
+$btn-bg: #fed204;
+$btn-text: #383543;
+
+
+//set line border-color and text color
+@mixin set-border($color) {
+    border-right: 1px solid $color;
+    height: 969px;
+    z-index: 5;
+}
+
+@mixin flex-center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

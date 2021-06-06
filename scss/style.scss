@@ -1,0 +1,101 @@
+
+@import 'config';
+
+.showcase {
+   #myVideo {
+       position : fixed;
+       top: 0;
+       right: 0;
+       left: 0;
+       min-width: 100%;
+       min-height: 100%;
+       z-index: 0;
+      
+   }
+
+   nav {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       position: fixed;
+       top: 0;
+       right:0;
+       left: 0;
+       margin: 0 auto;
+       width: 80%;
+       margin-top: 30px;
+
+       ul {
+           display: flex;
+           list-style-type: none;
+           color: $text-color;
+          
+       }
+
+       li {
+           padding: 15px;
+       }
+
+       img {
+           width: 148px;
+       }
+   }
+}
+
+.column{
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    
+    .line-1 {
+        @include set-border($color);
+        width: 30%;  
+    }
+
+    .line-2 {
+        @include set-border($color);
+        width: 15%;
+    }
+       
+}
+
+.main {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    @include flex-center-content;
+   
+    
+
+   .title-logo {
+       position: absolute;
+       width : 100%;
+       @include flex-center-content;
+
+       img {
+        width: 50%;
+    }
+
+    h1 {
+        color: $text-color;
+        font-size: 3em;
+        padding: 25px 0;
+        margin: 0;
+    }
+
+    .btn {
+        background-color: $btn-bg;
+        text-transform: uppercase;
+        padding: 27px;
+        border: none;
+        border-radius: 5px ;
+        letter-spacing: 3px;
+        font-size: .9em;
+        color: $btn-text;
+    }
+   }
+   
+}
