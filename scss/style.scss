@@ -2,6 +2,8 @@
 @import 'config';
 
 .showcase {
+    font-family: $font-text;
+
    #myVideo {
        position : fixed;
        top: 0;
@@ -9,8 +11,6 @@
        left: 0;
        min-width: 100%;
        min-height: 100%;
-       z-index: 0;
-      
    }
 
    nav {
@@ -24,16 +24,22 @@
        margin: 0 auto;
        width: 80%;
        margin-top: 30px;
+       z-index: 5;
+      
 
        ul {
            display: flex;
            list-style-type: none;
-           color: $text-color;
-          
        }
 
        li {
            padding: 15px;
+           color: $text-color;
+           
+       }
+
+       a {
+        text-decoration: none;
        }
 
        img {
@@ -68,6 +74,7 @@
     min-height: 100%;
     @include flex-center-content;
    
+   
     
 
    .title-logo {
@@ -80,10 +87,13 @@
     }
 
     h1 {
+        font-family: $font-h1;
+        font-weight: bold;
         color: $text-color;
         font-size: 3em;
         padding: 25px 0;
         margin: 0;
+        letter-spacing: 2px;
     }
 
     .btn {
@@ -95,7 +105,40 @@
         letter-spacing: 3px;
         font-size: .9em;
         color: $btn-text;
+        font-family: $font-text;
+        font-weight: 700;
+        cursor: pointer;
     }
+
+   }
+
+   .scroll-to{
+       position: absolute;
+       animation: MoveUpDown 2s linear infinite;
+       bottom: 8%;
+       cursor: pointer;
+
+       img.arrow {
+        width: 30px;
+        height: auto;
+        
+    }
+
+   }
+       
+   .scroll-to:hover {
+    animation-play-state: paused !important;
+   }
+
+    @keyframes MoveUpDown {
+        0%, 100% {
+            bottom: 60px;
+        }
+
+        50% {
+            bottom: 100px;
+        }
+    
    }
    
 }
