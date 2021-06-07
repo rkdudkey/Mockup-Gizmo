@@ -1,0 +1,31 @@
+.bouce-anime {
+    opacity: 1;
+    animation-name: bouce;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+
+@keyframes bouce {
+    0%, 100% {
+        transform: translateY(0);
+    } 
+    50% {
+        transform: translateY(-40px);
+    }
+}
+
+
+.fadeOutOpacity {
+    opacity: 1;
+	animation-name: fadeOutOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 1s;
+}
+
+@keyframes fadeOutOpacity {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+ }

@@ -1,16 +1,25 @@
 
 @import 'config';
+@import 'transition';
+
+.welcome {
+    @include full-page;
+    background-color: $yellow-bg;
+    z-index: 6;
+
+    @include flex-center-content;
+       img {
+        width: 20%;
+    }
+    
+    
+}
 
 .showcase {
     font-family: $font-text;
 
    #myVideo {
-       position : fixed;
-       top: 0;
-       right: 0;
-       left: 0;
-       min-width: 100%;
-       min-height: 100%;
+      @include full-page;
    }
 
    nav {
@@ -55,7 +64,7 @@
     display: flex;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 1;
     
     .line-1 {
         @include set-border($color);
@@ -74,10 +83,8 @@
     min-width: 100%;
     min-height: 100%;
     @include flex-center-content;
+    z-index: 2;
    
-   
-    
-
    .title-logo {
        position: absolute;
        width : 100%;
@@ -98,7 +105,7 @@
     }
 
     .btn {
-        background-color: $btn-bg;
+        background-color: $yellow-bg;
         text-transform: uppercase;
         padding: 27px;
         border: none;

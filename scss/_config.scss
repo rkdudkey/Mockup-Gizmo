@@ -1,7 +1,7 @@
 $color: #f5f1f14d;
 $text-color : #fff;
 $font-text : 'Gothic A1', sans-serif;
-$btn-bg: #fed204;
+$yellow-bg: #fed204;
 $btn-text: #383543;
 $font-h1: 'Nunito', sans-serif;
 
@@ -19,3 +19,13 @@ $font-h1: 'Nunito', sans-serif;
     justify-content: center;
     align-items: center;
 }
+
+@mixin full-page() {
+    position : fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
