@@ -211,6 +211,20 @@ html {
   background-attachment: fixed;
 }
 
+.our-mission2 {
+  background-image: url(https://www.gizmo-experience.com/wp-content/uploads/2018/10/accueil_gizmoimmo_fond-1200-min.jpg);
+
+  /* Full height */
+  min-height: 100%;
+  min-width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .main .title-logo {
   position: absolute;
   width: 100%;
