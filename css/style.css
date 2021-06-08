@@ -209,20 +209,20 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
 }
 
-.our-mission2 {
-  background-image: url(https://www.gizmo-experience.com/wp-content/uploads/2018/10/accueil_gizmoimmo_fond-1200-min.jpg);
-
-  /* Full height */
-  min-height: 100%;
-  min-width: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+.left-content h1:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 7px 12px;
+  border-color: transparent transparent transparent #fed204;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 .main .title-logo {
@@ -269,6 +269,60 @@ html {
   font-family: "Gothic A1", sans-serif;
   font-weight: 700;
   cursor: pointer;
+}
+
+.btn {
+  background-color: #fed204;
+  text-transform: uppercase;
+  padding: 27px;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  font-size: 0.9em;
+  color: #383543;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+}
+
+.container.center {
+  width: 80%;
+  margin: auto;
+}
+
+.left-content {
+  /** format the left side content**/
+  color: white;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.start-center {
+  justify-content: flex-start;
+  align-items: center;
+}
+.left-content .title {
+  font-family: "trendablack";
+  font-size: 2.5em;
+  line-height: 1.2em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.left-content .subtitle {
+  font-size: 0.9em;
+  font-weight: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-left: 25px;
+  position: relative;
 }
 
 .main .scroll-to {
