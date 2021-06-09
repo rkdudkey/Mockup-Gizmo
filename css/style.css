@@ -285,18 +285,10 @@ html {
   cursor: pointer;
 }
 
-.container {
-  width: 100%;
-}
-
-.container.center {
-  width: 80%;
-  margin: auto;
-}
-
 .left-content {
   /** format the left side content**/
   color: white;
+  width: 100%;
 }
 .flex {
   display: flex;
@@ -313,6 +305,12 @@ html {
   line-height: 1.2em;
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+.box1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .left-content .subtitle {
   font-size: 0.9em;
